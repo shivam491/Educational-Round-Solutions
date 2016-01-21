@@ -1,1 +1,14 @@
+http://www.codeforces.com/contest/620/problem/A
+------------
+#include <bits/stdc++.h>
+using namespace std;
 
+int main() {
+long long int a,b,c,d,i,j,k;
+cin>>a>>b>>c>>d;
+i=abs(c-a);
+j=abs(d-b);
+k=max(i,j);
+cout<<k;
+
+}
