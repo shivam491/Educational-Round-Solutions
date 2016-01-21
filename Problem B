@@ -1,0 +1,25 @@
+http://www.codeforces.com/contest/620/problem/B
+---------------------
+#include <iostream>
+using namespace std;
+
+int main() {
+	long int segment[]={6,2,5,5,4,5,6,3,7,6};
+	long long int no,no1,sum,l,m,n,num;
+	cin>>no>>no1;
+	sum=0;
+	for(l=no;l<=no1;l++)
+	{
+		num=l;
+		while(num!=0)
+		{
+			n=num%10;
+			sum+=segment[n];
+			num/=10;
+						
+		}
+		
+	}
+	
+	cout<<sum;
+}
