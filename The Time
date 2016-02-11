@@ -1,0 +1,52 @@
+http://www.codeforces.com/contest/622/problem/B
+
+-----------------
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	long int t,i,j,k,l,m,n,o,p,a,b,c,d;
+	string str;
+	cin>>str;
+	i=str[0]-'0';
+	j=str[1]-'0';
+	i=i*10+j;
+	j=str[3]-'0';
+	k=str[4]-'0';
+	j=j*10+k;
+	//ih    jmin
+	cin>>p;
+	k=p/60;
+	l=p%60;
+	//k h l min
+	
+	m=j+l;
+	a=0;
+	if(m>=60)
+	{
+		a=m/60;
+	}
+	
+	b=m%60;// b minutes
+	
+	c=i+k+a;
+	if(c>=24)
+	{
+		c=c%24;
+	}
+	
+	if(c<10)
+	{
+		cout<<"0"<<c<<":";
+	}
+	else
+	cout<<c<<":";
+	if(b<10)
+	{
+		cout<<"0"<<b;
+	}
+	else
+	cout<<b;
+	
+	
+}
