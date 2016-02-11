@@ -1,0 +1,20 @@
+http://www.codeforces.com/contest/622/problem/A
+-------
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	long long int t,i,j,k,l,m,n;
+	cin>>n;
+	for(i=1;;i++)
+	{
+		k=(i*(i+1))/2;
+		if(k>=n)
+		break;
+	}
+	i--;
+	k=(i*(i+1))/2;
+	j=n-k;
+	//cout<<"k";
+	cout<<j;
+}
