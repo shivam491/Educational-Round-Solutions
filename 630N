@@ -1,0 +1,22 @@
+http://www.codeforces.com/contest/630/problem/N
+-----------
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+	long double n,i,j,k,a,b,c,d,r,e;
+	
+	cin>>a>>b>>c;
+	i=(b*b)-(4*a*c);
+	double q=sqrt(i);
+	double o=(-b-q)/(2*a);
+	double p=(-b+q)/(2*a);
+	if(o<p)
+	swap(o,p);
+	cout<<setprecision(24)<<o<<"\n"<<setprecision(24)<<p;
+	
+	
+	
+	
+}
