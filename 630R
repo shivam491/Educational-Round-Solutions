@@ -1,0 +1,14 @@
+http://www.codeforces.com/contest/630/problem/R
+-------
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	long long int n,i,j,k=1;
+	cin>>n;
+	if(n%2==0)
+	k=2;
+	else
+	k=1;
+	cout<<k;
+}
