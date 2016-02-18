@@ -1,0 +1,17 @@
+http://www.codeforces.com/contest/630/problem/B
+--------
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+	
+	long double i,j,k,l;
+	cin>>i>>j;
+	
+	long double d=pow(1.000000011,j);
+	k=i*d;
+	cout<<setprecision(24)<<k;
+	
+	
+}
