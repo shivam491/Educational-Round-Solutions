@@ -1,0 +1,11 @@
+http://www.codeforces.com/contest/630/problem/J
+-----------
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	long long int n,i,j,k=0;
+	cin>>n;
+	k=n/2520;
+	cout<<k;
+}
