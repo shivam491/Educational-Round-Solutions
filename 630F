@@ -1,0 +1,45 @@
+http://www.codeforces.com/contest/630/problem/F
+---------
+#include <bits/stdc++.h>
+using namespace std;
+
+long long int cal(long long int n,long long int r)
+{
+	
+	long long int den=1,num=1;
+	for(long int i=1;i<=r;i++)
+	{
+		den=den*i;
+		num=num*(n-i+1);
+		
+		if(num%den==0)
+		{
+			num=num/den;
+			den=1;
+		}
+		
+	}
+	
+//	cout<<num<<" "<<den<<"\n";
+	
+	long long int t=num/den;
+	return t;
+	
+	}
+
+
+int main() {
+	long long int n,i,j,k=0;
+	cin>>n;
+	j=cal(n,5);
+//	cout<<j<<" ";
+	k+=j;
+	j=cal(n,6);
+//	cout<<j<<" ";
+	k+=j;
+	j=cal(n,7);
+//	cout<<j<<" ";
+	k+=j;
+	
+	cout<<k;
+}
