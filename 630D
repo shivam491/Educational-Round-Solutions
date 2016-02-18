@@ -1,0 +1,12 @@
+http://www.codeforces.com/contest/630/problem/D
+-----
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	long long int n,i,j,k=1;
+	cin>>n;
+	j=(n*(12+((n-1)*6)))/2;
+	k+=j;
+	cout<<k;
+}
