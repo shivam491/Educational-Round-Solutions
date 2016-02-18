@@ -1,0 +1,10 @@
+http://www.codeforces.com/contest/630/problem/A
+-----------
+#include<iostream>
+using namespace std;
+int main()
+{
+    long long int t;
+    cin>>t;
+    cout<<"25";
+}
